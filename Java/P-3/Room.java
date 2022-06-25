@@ -1,87 +1,58 @@
-//cod – код путевки
-//surname – фамилия клиента
-//name – название пансионата
-//number – номер 
-//type – вид жилья 
-//date1 – дата заезда
-//date2 – дата выезда
-//quantity – количество человек
-//price - цена
-
-package pr3;
+//Система Управления доставкой товара.
+//Id - Идентификатор
+//name - название товара
+//courier - курьер
+//dateTime - Дата и время (String);
+//type - тип заказа
+package re;
 
 public class Room {
 	public class Room {
-		private int cod;
-		private String surname;
+			private int Id;
 		private String name;
-		private int number;
+		private String courier;
+		private String dateTime;
 		private int type;
-		private int data1;
-		private int data2;
-		private int quantity;
-		private int price;
-
-		public Room(int cod, String surname, String name, int number, int type, int data1, int data2, int quantity, int price){
-		this.cod=cod;
-		this.surname=surname;
-		this.number=number;
-		this.type=type;
-		this.data1=data1;
-		this.data2=data2;
-		this.quantity=quantity;
-		this.price=price;
+		public Room(int Id, String name, String courier, String dateTime, int type){
+			this.Id=Id;
+			this.name=name;
+			this.courier=courier;
+			this.dateTime=dateTime;
+			this.type=type;
 		}
-		public int getcod(){
-		return cod;
+		public int getId(){
+			return Id;
 		}
-		public void setcod(int cod){
-		this.cod=cod;
+		public void setId(int Id){
+			this.Id=Id;
 		}
-		public int getsurname(){
-		return surname;
+		public int getname(){
+			return name;
 		}
-		public void setsurname(int surname){
-		this.surname=surname;
+		public void setname(int name){
+			this.name=name;
 		}
-		public int getnumber(){
-		return number;
+		public int getcourier(){
+			return courier;
 		}
-		public void setnumber(int number){
-		this.number=number;
+		public void setcourier(int courier){
+			this.courier=courier;
+		}
+		public int getdateTime(){
+			return dateTime;
+		}
+		public void setdateTime(int dateTime){
+			this.dateTime=dateTime;
 		}
 		public int gettype(){
-		return type;
+			return type;
 		}
-		public void settype(int type){
-		this.type=type;
-		}
-		public int getdata1(){
-		return data1;
-		}
-		public void setdata1(int data1){
-		this.data1=data1;
-		}
-		public int getdata2(){
-		return data2;
-		}
-		public void setdata2(int data2){
-		this.data2=data2;
-		}
-		public int getquantity(){
-		return quantity;
-		}
-		public void setquantity(int quantity) {
-		this.quantity=quantity;
-		}
-		public int getprice(){
-		return price;
-		}
-		public void setprice(int price) {
-		this.price=price;
+
+		public void settype(int type) {
+			this.type = type;
 		}
 		public String toString(){
-		return "код путевки-"+cod+"\n"+"фамилия клиента-"+surname+"\n"+"название пансионата-"+name +"\n"+"номер-"+number+"\n"+"вид жилья-"+type+"\n"+"дата заезда-"+data1+"\n"+"дата выезда-"+data2+"\n"+"количество человек-"+quantity+"\n"+"цена-"+price+"\n";
-		} 
-	}
+			return "Идентификатор-"+Id+"\n"+"Название товара-"+name+"\n"+"курьер-"+courier+"\name"+"Дата и Время-"+dateTime+"/5"+"\n"+"тип товара-"+type+"\n";
+		}
+}
 }

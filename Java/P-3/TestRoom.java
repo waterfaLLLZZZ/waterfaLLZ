@@ -1,19 +1,15 @@
-//cod – код путевки
-//surname – фамилия клиента
-//name – название пансионата
-//number – номер 
-//type – вид жилья 
-//date1 – дата заезда
-//date2 – дата выезда
-//quantity – количество человек
-//price - цена
+//Система Управления доставкой товара.
+//Id - Идентификатор
+//name - название товара
+//courier - курьер
+//dateTime - Дата и время (String);
+//type - тип заказа
+package re;
 
-package pr3;
 public class TestRoom {
-	public class TestRoom {
-		public static void main(String[] args){
-		Room room=new Room(007, Малыхин, Елисейские поля, 7, 1, 12.06, 31.06, 6, 10999);
+	public static void main(String[] args){
+		Room room=new Room(101,Бургеры,Иван,25,1);
 		System.out.println(room.toString());
-		}
+
 		}
 }
